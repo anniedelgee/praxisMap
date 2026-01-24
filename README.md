@@ -1,3 +1,3 @@
 # praxisMap
-In the context of climate resilience and socio-economic development, praxisMap seeks to redefine the relationship between the designer and her computational tools by providing a stuctured decision making space for research and development which is process rather than outcome- driven. 
+A design software for collaborative systems mapping and socio-ecological impact evaluation, for use by designers, engineers and other professionals working on resilient futures projects.
 
