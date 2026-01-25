@@ -1,0 +1,106 @@
+/* ...existing code... */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* prevent left/right scrolling */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* center content and ensure full-viewport height */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000000;
+  min-height: 100vh;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+/* class intended for the image element 
+.praxisMaplogo {
+  display: block;
+  object-fit: contain;   /* ensure image scales without cropping 
+  margin-top: 0.25px;
+  transform: scale(0.4); Equal to scaleX(0.7) scaleY(0.7)
+}
+*/
+
+.praxisMaplogo {
+  height: 40vh;              /* top half */
+  width: 100%;
+  display: flex;
+  align-items: center;       /* center image within top half vertically */
+  justify-content: center;   /* center horizontally */
+  margin: 0;
+  padding-top: 30vh;
+
+}
+
+/* actual image: responsive and guaranteed to fit inside top half */
+.praxisMaplogo img {
+  display: block;
+  width: auto;
+  max-width: 60vw;   /* never wider than viewport */
+  max-height: 100vh;  /* slightly less than container height to avoid touching edges */
+  height: auto;
+  object-fit: contain;
+}
+.praxisMapSlogan {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+/*
+:root {
+  --praxisMapSlogan-font: "Helvetica Neue", Arial, sans-serif;
+}
+*/
+.praxisMapSlogan h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  margin: 30;
+  color: #aec0dd;
+  text-align: center;
+  padding-top: 30vh;
+}
+.betaVersionAvailable {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding:1rem;
+  margin-top: auto;
+}
+.betaVersionAvailable h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #aec0dd;
+  text-align:right;
+  padding-top: 20vh;
+  padding-bottom: 0;
+}
+
+.rightsReserved h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #aec0dd;
+  text-align:left;
+  padding-top: 20vh;
+  padding-bottom: 0;
+}
+
+
